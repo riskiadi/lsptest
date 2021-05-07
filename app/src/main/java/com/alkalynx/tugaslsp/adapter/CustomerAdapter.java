@@ -58,6 +58,7 @@ public class CustomerAdapter extends BaseAdapter {
 
         TextView customerOrder = view.findViewById(R.id.customerOrder);
         TextView customerName = view.findViewById(R.id.customerName);
+        ImageView foodImage = view.findViewById(R.id.foodImage);
 
         CustomerModel data = items.get(position);
 
@@ -72,6 +73,10 @@ public class CustomerAdapter extends BaseAdapter {
         });
         customerOrder.setText(data.getMenuModel().getFoodName());
         customerName.setText(data.getName());
+
+        Context context = foodImage.getContext();
+        int imgId = context.getResources().getIdentifier(data.getMenuModel().getImage(), "drawable", context.getPackageName());
+        foodImage.setImageResource(imgId);
 
         return view;
     }

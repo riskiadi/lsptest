@@ -1,44 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
+    android:padding="15dp"
     tools:context=".OrderActivity">
 
-    <ImageView
-        android:id="@+id/menuImage"
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/begel" />
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        app:cardElevation="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/foodNameTxt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/menuImage"
-        android:layout_marginTop="16dp"
-        android:text="BEGEL"
-        android:textColor="@color/black"
-        android:textSize="22sp"
-        android:textStyle="bold" />
+        <RelativeLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_marginTop="5dp"
-        android:id="@+id/foodPriceTxt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/foodNameTxt"
-        android:text="Harga: Rp 23.000" />
+            <ImageView
+                android:id="@+id/menuImage"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/begel" />
 
-    <Button
-        android:id="@+id/orderBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/foodPriceTxt"
-        android:layout_marginTop="50dp"
-        android:text="ORDER" />
+            <TextView
+                android:id="@+id/foodNameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menuImage"
+                android:layout_marginTop="16dp"
+                android:text="BEGEL"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
-</RelativeLayout>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/foodPriceTxt"
+                android:layout_width="match_parent"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/foodNameTxt"
+                android:text="Harga: Rp 23.000" />
+
+            <Button
+                android:id="@+id/orderBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/foodPriceTxt"
+                android:layout_marginTop="50dp"
+                android:text="ORDER" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

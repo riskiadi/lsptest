@@ -36,7 +36,8 @@
             android:label="@string/title_activity_maps"></activity>
         <activity
             android:name=".LoginActivity"
-            android:label="Login">
+            android:label="Login"
+            android:theme="@style/Theme.NoAppBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -47,7 +48,9 @@
             android:name=".OrderActivity"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".CustomerActivity" android:label="Customers"/>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity">
+
+        </activity>
     </application>
 
 </manifest>

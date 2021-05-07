@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fefefe"
+    android:background="#6200EE"
     android:orientation="vertical"
     android:padding="26dp"
     tools:context=".LoginActivity">
@@ -12,19 +12,23 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
         android:gravity="center"
         android:text="TOKOLAKU"
-        android:textColor="@color/black"
-        android:layout_marginBottom="20dp"
-        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textSize="26sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/usernameEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:hint="Username"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <EditText
         android:id="@+id/passwordEdt"
@@ -32,9 +36,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:hint="Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <Button
+        android:backgroundTint="#2C974B"
         android:id="@+id/signInBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

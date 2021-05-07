@@ -4,12 +4,20 @@
     android:layout_height="wrap_content"
     android:padding="8dp">
 
+    <ImageView
+        android:id="@+id/foodImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/challah" />
+
     <TextView
         android:id="@+id/customerOrder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/foodImage"
         android:text="Begel"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -21,8 +29,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/customerOrder"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="5dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/foodImage"
         android:text="Ordered by: Bambang"
         android:textSize="17sp" />
 
